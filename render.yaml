@@ -1,0 +1,11 @@
+services:
+  - type: web
+    name: genisys-bot
+    env: node
+    buildCommand: npm install
+    startCommand: node index.js
+    envVars:
+      - key: BOT_NAME
+        value: Genisys
+      - key: OWNER_NUMBER
+        value: 234XXXXXXXXXX
