@@ -1,9 +1,7 @@
 module.exports = {
   name: "hello",
-  description: "Replies with a greeting",
+  description: "Real command 1",
   run: async (sock, msg, args) => {
-    await sock.sendMessage(msg.key.remoteJid, {
-      text: "👋 Hello! I am Genisys.",
-    });
+    await sock.sendMessage(msg.key.remoteJid, { text: `Hello! I am Genisys, your WhatsApp assistant.` });
   }
 };
